@@ -97,5 +97,16 @@
       key = "<leader>gp";
       action = "<cmd>Gitsigns nav_hunk prev<CR>";
     }
+    # Diffview
+    {
+      mode = "n";
+      key = "<leader>gds";
+      action = "<cmd>DiffviewOpen<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>gdh";
+      action = "<cmd>DiffviewFileHistory<CR>";
+    }
   ];
 }

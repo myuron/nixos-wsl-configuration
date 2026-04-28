@@ -35,6 +35,10 @@
     gitsigns = {
       enable = true;
     };
+    # Gitの差分表示
+    diffview = {
+      enable = true;
+    };
     web-devicons = {
       enable = true;
     };
