@@ -3,6 +3,7 @@
   programs.home-manager.enable = true;
   imports = [
     ./nixvim.nix
+    ./fish.nix
   ];
   home = rec {
     username = "myuron";
@@ -14,6 +15,7 @@
       ghq
       lazygit
       ripgrep
+      claude-code
     ];
   };
 }
