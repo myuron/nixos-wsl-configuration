@@ -4,10 +4,6 @@
     vimAlias = true;
     colorschemes = {
       catppuccin = { enable = true; };
-      # tokyonight = { enable = true; };
-      # ayu = { enable = true; };
-      # bamboo = { enable = true; };
-      # dracula = { enable = true; };
     };
     imports = [
       ./nvim/keymap.nix
