@@ -108,5 +108,10 @@
       key = "<leader>gdh";
       action = "<cmd>DiffviewFileHistory<CR>";
     }
+    {
+      mode = "n";
+      key = "<leader>gdc";
+      action = "<cmd>DiffviewClose<CR>";
+    }
   ];
 }
