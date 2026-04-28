@@ -42,6 +42,14 @@
     web-devicons = {
       enable = true;
     };
+    # シンタックスハイライト
+    treesitter = {
+      enable = true;
+      settings = {
+        indent = { enable = true; };
+        highlight = { enable = true; };
+      };
+    };
     lsp = {
       enable = true;
       keymaps = {
