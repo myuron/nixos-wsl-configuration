@@ -31,5 +31,7 @@
     hlsearch = true;
     # 検索結果をインクリメンタルハイライト表示するか
     incsearch = true;
+    # Floating windowに枠線をつける
+    winborder = "single";
   };
 }

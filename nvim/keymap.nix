@@ -58,5 +58,44 @@
       key = "<S-Tab>";
       action = "<cmd>bprev<CR>";
     }
+    # Neo-tree
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<CR>";
+    }
+    # Telescope
+    {
+      mode = "n";
+      key = "<leader>fw";
+      action = "<cmd>Telescope live_grep<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>Telescope find_files<CR>";
+    }
+    # Aerial
+    {
+      mode = "n";
+      key = "<leader>a";
+      action = "<cmd>AerialToggle!<CR>";
+    }
+    # Gitsigns
+    {
+      mode = "n";
+      key = "<leader>gl";
+      action = "<cmd>Gitsigns setloclist<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>gn";
+      action = "<cmd>Gitsigns nav_hunk next<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>gp";
+      action = "<cmd>Gitsigns nav_hunk prev<CR>";
+    }
   ];
 }

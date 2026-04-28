@@ -1,24 +1,18 @@
 { pkgs, ... }:
 {
+  programs.home-manager.enable = true;
   imports = [
     ./nixvim.nix
   ];
-
   home = rec {
     username = "myuron";
     homeDirectory = "/home/${username}";
     stateVersion = "25.11";
     packages = with pkgs; [
-      yazi
-      nixfmt
-      nixfmt-tree
+      git
+      gh
+      lazygit
+      ripgrep
     ];
-  };
-  programs.home-manager.enable = true;
-
-  programs = {
-    git = {
-      enable = true;
-    };
   };
 }

@@ -1,9 +1,38 @@
 {
   plugins = {
-    bufferline = {
+    # ファイラー
+    neo-tree = {
+      enable = true;
+    };
+    telescope = {
+      enable = true;
+    };
+    # バッファ表示
+    barbar = {
+      enable = true;
+    };
+    # ステータスラインカスタマイズ
+    lualine = {
+      enable = true;
+    };
+    # インデントガイド
+    hlchunk = {
+      enable = true;
+    };
+    # モダンメッセージウィンドウ
+    noice = {
       enable = true;
     };
     mini-pairs = {
+      enable = true;
+    };
+    mini-surround = {
+      enable = true;
+    };
+    aerial = {
+      enable = true;
+    };
+    gitsigns = {
       enable = true;
     };
     web-devicons = {
@@ -38,7 +67,12 @@
         sources = [
           {
             name = "nvim_lsp";
-            priority = 1000;
+          }
+          {
+            name = "path";
+          }
+          {
+            name = "buffer";
           }
         ];
         mapping = {
