@@ -47,7 +47,17 @@
         };
       };
       apps.${system} = {
-        home-manager-build = {
+        os = {
+          type = "app";
+          program = toString (
+            pkgs.writeShellScript "NixOS build" ''
+              	  set -e
+              	  echo "NixOS build..."
+                  sudo nixos-rebuild switch --flake .#nixos --impure
+              	''
+          );
+        };
+        home = {
           type = "app";
           program = toString (
             pkgs.writeShellScript "home-manager build" ''

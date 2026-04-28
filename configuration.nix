@@ -9,6 +9,7 @@
   config,
   lib,
   pkgs,
+  environment,
   ...
 }:
 
@@ -20,6 +21,10 @@
 
   wsl.enable = true;
   wsl.defaultUser = "myuron";
+
+  environment.systemPackages = with pkgs; [
+    fish
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
