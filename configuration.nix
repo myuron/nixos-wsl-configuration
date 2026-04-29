@@ -21,7 +21,13 @@
   wsl.enable = true;
   wsl.defaultUser = "myuron";
 
-  programs.fish.enable = true;
+  programs = {
+    fish.enable = true;
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+    };
+  };
   users.users.myuron = {
     shell = pkgs.fish;
   };
