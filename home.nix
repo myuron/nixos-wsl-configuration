@@ -4,6 +4,7 @@
   imports = [
     ./nixvim.nix
     ./fish.nix
+    ./fzf.nix
   ];
   home = rec {
     username = "myuron";
