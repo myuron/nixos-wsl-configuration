@@ -5,6 +5,7 @@
     ./nixvim.nix
     ./fish.nix
     ./fzf.nix
+    ./direnv.nix
   ];
   home = rec {
     username = "myuron";
