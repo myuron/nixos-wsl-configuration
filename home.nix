@@ -18,8 +18,8 @@
       ghq
       lazygit
       ripgrep
-      claude-code
       nix-search-tv
+      llm-agents.claude-code
     ];
   };
 }

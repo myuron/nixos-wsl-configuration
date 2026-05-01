@@ -5,6 +5,9 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -16,6 +19,7 @@
       self,
       nixpkgs,
       home-manager,
+      llm-agents,
       nixvim,
     }:
     let
@@ -36,6 +40,9 @@
           pkgs = import nixpkgs {
             system = system;
             config.allowUnfree = true;
+            overlays = [
+              llm-agents.overlays.default
+            ];
           };
           extraSpecialArgs = {
             inherit nixpkgs;
