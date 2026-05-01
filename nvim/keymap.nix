@@ -64,17 +64,6 @@
       key = "<leader>e";
       action = "<cmd>Neotree toggle<CR>";
     }
-    # Telescope
-    {
-      mode = "n";
-      key = "<leader>fw";
-      action = "<cmd>Telescope live_grep<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>ff";
-      action = "<cmd>Telescope find_files<CR>";
-    }
     # Aerial
     {
       mode = "n";

@@ -6,6 +6,21 @@
     };
     telescope = {
       enable = true;
+      settings = {
+        pickers = {
+          find_files = {
+            hidden = true;
+          };
+        };
+      };
+      keymaps = {
+        "<leader>fw" = {
+          action = "live_grep";
+        };
+        "<leader>ff" = {
+          action = "find_files";
+        };
+      };
     };
     # バッファ表示
     barbar = {
