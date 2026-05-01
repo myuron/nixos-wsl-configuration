@@ -18,6 +18,7 @@
       lazygit
       ripgrep
       claude-code
+      nix-search-tv
     ];
   };
 }
