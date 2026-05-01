@@ -3,7 +3,8 @@
     enable = true;
     vimAlias = true;
     colorschemes = {
-      catppuccin = { enable = true; };
+      # catppuccin = { enable = true; };
+      solarized-osaka = { enable = true; };
     };
     imports = [
       ./nvim/keymap.nix
