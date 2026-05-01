@@ -6,6 +6,7 @@
     ./fish.nix
     ./fzf.nix
     ./direnv.nix
+    ./television.nix
   ];
   home = rec {
     username = "myuron";
