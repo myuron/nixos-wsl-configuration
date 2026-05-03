@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/determinate-nix-action@main
-      - name: Run a script
-        run: echo "hello, World"
+      - name: home-manager build
+        run: nix run .#home
