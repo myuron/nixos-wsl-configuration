@@ -1,4 +1,4 @@
-name: Simple Workflow
+name: home-manager build
 
 on:
   push:
@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/determinate-nix-action@main
       - name: home-manager build
-        run: nix run .#home
+        run: nix build .#homeConfigurations.home.activationPackage
